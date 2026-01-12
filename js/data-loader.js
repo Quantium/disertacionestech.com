@@ -274,6 +274,7 @@ class DataLoader {
         if (episode.guestInfo) {
             const guestContainer = document.querySelector('.episode-guest');
             if (guestContainer) {
+                // Actualizar solo el contenido interno del <ul>, manteniendo la estructura
                 guestContainer.innerHTML = `
                     <li class="flex items-center">
                         <img class="shrink-0 rounded-full mr-3" src="${episode.guestInfo.image}" width="44" height="44" alt="${episode.guestInfo.name}">

@@ -1,7 +1,7 @@
 {
   "episodes": [
     {
-      "id": 1,
+      "id": 10,
       "title": "Regulación, poder y tecnología (Parte II): Lo que no se dice sobre competencia",
       "link": "podcast.html",
       "image": "./images/podcast-spot-01.jpg",
@@ -13,7 +13,7 @@
       "description": "Segunda parte de la conversación con Gabriel González. Entramos a terreno incómodo: cómo la regulación realmente funciona cuando se cruza con tecnología, poder económico y decisiones políticas."
     },
     {
-      "id": 2,
+      "id": 9,
       "title": "Inteligencia Artificial para abogados y monopolios tecnológicos (Parte I)",
       "link": "podcast.html",
       "image": "./images/podcast-spot-02.jpg",
@@ -25,7 +25,7 @@
       "description": "Entrevista a Gabriel González, abogado experto en materia económica. Hablamos sobre los monopolios tecnológicos, el impacto de la IA en el derecho y los desafíos legales del futuro."
     },
     {
-      "id": 3,
+      "id": 8,
       "title": "De computadoras mainframe a algoritmos de administración energética (1a Parte)",
       "link": "podcast.html",
       "image": "./images/podcast-spot-03.jpg",
@@ -37,7 +37,7 @@
       "description": "¿Cómo fue la carrera de un Jefe de Tecnología de la CFE? Una mirada profunda a la evolución tecnológica en el sector energético, desde los mainframes hasta los algoritmos modernos."
     },
     {
-      "id": 4,
+      "id": 7,
       "title": "De la popó de caballo a algoritmos de simulación urbana: Disertando con Vicente Torres",
       "link": "podcast.html",
       "image": "./images/podcast-spot-04.jpg",
@@ -90,11 +90,11 @@
       "guestInfo": {
         "name": "Vicente Torres",
         "role": "Experto en Movilidad y Asuntos Públicos",
-        "image": "./images/host-04.jpg"
+        "image": "./images/vicente-torres-garibay.png"
       }
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "De Philips al AI-powered Retail: El verdadero rol del Product Management",
       "link": "podcast.html",
       "image": "./images/podcast-spot-05.jpg",
@@ -106,7 +106,7 @@
       "description": "Disertando con Alan Cymberknoh sobre cómo la inteligencia artificial está transformando el retail y cuál es el papel crucial del Product Management en esta nueva era."
     },
     {
-      "id": 6,
+      "id": 5,
       "title": "Fire Fighting: El ciclo destructivo de las urgencias",
       "link": "podcast.html",
       "image": "./images/podcast-spot-06.jpg",
@@ -118,7 +118,7 @@
       "description": "Hablo sobre el fenómeno del 'firefighting' en las organizaciones: ese ciclo de resolver crisis inmediatas sin abordar los problemas de fondo y cómo salir de esa dinámica reactiva."
     },
     {
-      "id": 7,
+      "id": 4,
       "title": "Avance de la Temporada 2: Innovación y Liderazgo Tecnológico",
       "link": "podcast.html",
       "image": "./images/podcast-spot-07.jpg",
@@ -130,7 +130,7 @@
       "description": "Prepárate para la segunda temporada. Temas clave: mejores prácticas de innovación, habilidades esenciales para un CTO, metodologías ágiles y arquitectura de sistemas."
     },
     {
-      "id": 8,
+      "id": 3,
       "title": "Episodio Especial: Renuncié a mi puesto de CTO, ahora apuesto a mi visión",
       "link": "podcast.html",
       "image": "./images/podcast-spot-08.jpg",
@@ -142,7 +142,7 @@
       "description": "Una reflexión personal sobre el emprendimiento, el riesgo y el cambio de rumbo profesional al dejar un puesto ejecutivo para perseguir una visión propia."
     },
     {
-      "id": 9,
+      "id": 2,
       "title": "Tipos de CTOs: Liderazgo para cada etapa",
       "link": "podcast.html",
       "image": "./images/podcast-spot-09.jpg",
@@ -154,7 +154,7 @@
       "description": "Exploramos los diferentes perfiles de Chief Technology Officers (CTOs) y analizamos qué tipo de liderazgo tecnológico necesita una empresa según su etapa de crecimiento."
     },
     {
-      "id": 10,
+      "id": 1,
       "title": "Disertaciones Tecnológicas: Episodio Introductorio",
       "link": "podcast.html",
       "image": "./images/podcast-spot-10.jpg",
