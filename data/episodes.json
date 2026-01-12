@@ -1,0 +1,124 @@
+{
+  "episodes": [
+    {
+      "id": 1,
+      "title": "Regulación, poder y tecnología (Parte II): Lo que no se dice sobre competencia",
+      "link": "podcast.html",
+      "image": "./images/podcast-01.jpg",
+      "carouselImage": "./images/carousel-01.png",
+      "date": "15 dic",
+      "episodeNumber": 10,
+      "category": "Política Tecnológica",
+      "categoryId": "4",
+      "description": "Segunda parte de la conversación con Gabriel González. Entramos a terreno incómodo: cómo la regulación realmente funciona cuando se cruza con tecnología, poder económico y decisiones políticas."
+    },
+    {
+      "id": 2,
+      "title": "Inteligencia Artificial para abogados y monopolios tecnológicos (Parte I)",
+      "link": "podcast.html",
+      "image": "./images/podcast-02.jpg",
+      "carouselImage": "./images/carousel-02.png",
+      "date": "04 nov",
+      "episodeNumber": 9,
+      "category": "Legal Tech",
+      "categoryId": "4",
+      "description": "Entrevista a Gabriel González, abogado experto en materia económica. Hablamos sobre los monopolios tecnológicos, el impacto de la IA en el derecho y los desafíos legales del futuro."
+    },
+    {
+      "id": 3,
+      "title": "De computadoras mainframe a algoritmos de administración energética (1a Parte)",
+      "link": "podcast.html",
+      "image": "./images/podcast-03.jpg",
+      "carouselImage": "./images/carousel-03.png",
+      "date": "01 nov",
+      "episodeNumber": 8,
+      "category": "Historia Tech",
+      "categoryId": "6",
+      "description": "¿Cómo fue la carrera de un Jefe de Tecnología de la CFE? Una mirada profunda a la evolución tecnológica en el sector energético, desde los mainframes hasta los algoritmos modernos."
+    },
+    {
+      "id": 4,
+      "title": "De la popó de caballo a algoritmos de simulación urbana: Disertando con Vicente Torres",
+      "link": "podcast.html",
+      "image": "./images/podcast-04.jpg",
+      "carouselImage": "./images/carousel-04.png",
+      "date": "31 oct",
+      "episodeNumber": 7,
+      "category": "Urbanismo y Datos",
+      "categoryId": "7",
+      "description": "Analizamos la evolución urbana y cómo los algoritmos de simulación ayudan a planificar mejores ciudades, resolviendo problemas que van más allá de la infraestructura física."
+    },
+    {
+      "id": 5,
+      "title": "De Philips al AI-powered Retail: El verdadero rol del Product Management",
+      "link": "podcast.html",
+      "image": "./images/podcast-05.jpg",
+      "carouselImage": "./images/carousel-05.png",
+      "date": "16 abr",
+      "episodeNumber": 6,
+      "category": "Product Management",
+      "categoryId": "8",
+      "description": "Disertando con Alan Cymberknoh sobre cómo la inteligencia artificial está transformando el retail y cuál es el papel crucial del Product Management en esta nueva era."
+    },
+    {
+      "id": 6,
+      "title": "Fire Fighting: El ciclo destructivo de las urgencias",
+      "link": "podcast.html",
+      "image": "./images/podcast-06.jpg",
+      "carouselImage": "./images/carousel-06.png",
+      "date": "14 mar",
+      "episodeNumber": 5,
+      "category": "Cultura Organizacional",
+      "categoryId": "9",
+      "description": "Hablo sobre el fenómeno del 'firefighting' en las organizaciones: ese ciclo de resolver crisis inmediatas sin abordar los problemas de fondo y cómo salir de esa dinámica reactiva."
+    },
+    {
+      "id": 7,
+      "title": "Avance de la Temporada 2: Innovación y Liderazgo Tecnológico",
+      "link": "podcast.html",
+      "image": "./images/podcast-07.jpg",
+      "carouselImage": "./images/carousel-07.png",
+      "date": "12 mar",
+      "episodeNumber": 4,
+      "category": "Novedades",
+      "categoryId": "5",
+      "description": "Prepárate para la segunda temporada. Temas clave: mejores prácticas de innovación, habilidades esenciales para un CTO, metodologías ágiles y arquitectura de sistemas."
+    },
+    {
+      "id": 8,
+      "title": "Episodio Especial: Renuncié a mi puesto de CTO, ahora apuesto a mi visión",
+      "link": "podcast.html",
+      "image": "./images/podcast-08.jpg",
+      "carouselImage": "./images/carousel-08.png",
+      "date": "11 feb",
+      "episodeNumber": 3,
+      "category": "Carrera y Liderazgo",
+      "categoryId": "10",
+      "description": "Una reflexión personal sobre el emprendimiento, el riesgo y el cambio de rumbo profesional al dejar un puesto ejecutivo para perseguir una visión propia."
+    },
+    {
+      "id": 9,
+      "title": "Tipos de CTOs: Liderazgo para cada etapa",
+      "link": "podcast.html",
+      "image": "./images/podcast-09.jpg",
+      "carouselImage": "./images/carousel-09.png",
+      "date": "19 feb",
+      "episodeNumber": 2,
+      "category": "Liderazgo Técnico",
+      "categoryId": "11",
+      "description": "Exploramos los diferentes perfiles de Chief Technology Officers (CTOs) y analizamos qué tipo de liderazgo tecnológico necesita una empresa según su etapa de crecimiento."
+    },
+    {
+      "id": 10,
+      "title": "Disertaciones Tecnológicas: Episodio Introductorio",
+      "link": "podcast.html",
+      "image": "./images/podcast-10.jpg",
+      "carouselImage": "./images/carousel-10.png",
+      "date": "04 ene",
+      "episodeNumber": 1,
+      "category": "Introducción",
+      "categoryId": "5",
+      "description": "Bienvenidos a Disertaciones Tecnológicas. En este primer episodio exploramos el lado humano, técnico y estratégico de la tecnología y lo que está por venir."
+    }
+  ]
+}

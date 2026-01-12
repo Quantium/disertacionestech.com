@@ -1,0 +1,46 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Mendes",
+      "nickname": "@saramendes",
+      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "image": "./images/testimonial-01.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Michał Rutt",
+      "nickname": "@michrutt",
+      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "image": "./images/testimonial-02.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Lina James",
+      "nickname": "@linaj87",
+      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "image": "./images/testimonial-03.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Abigail Boucher",
+      "nickname": "@AbbyBoucher",
+      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "image": "./images/testimonial-04.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Emma Bostian",
+      "nickname": "@emmacode",
+      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "image": "./images/testimonial-05.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Addy Osman",
+      "nickname": "@addyO",
+      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "image": "./images/testimonial-06.jpg"
+    }
+  ]
+}

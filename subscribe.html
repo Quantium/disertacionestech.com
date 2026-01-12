@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Suscribirse - Disertaciones Tecnológicas</title>
+    <meta name="description" content="Suscríbete a Disertaciones Tecnológicas desde tu plataforma favorita de podcasting.">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="./css/vendors/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/vendors/swiper-bundle.min.css" />
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body class="font-inter antialiased bg-slate-900 text-slate-100 tracking-tight">
+
+    <!-- Page wrapper -->
+    <div class="flex flex-col min-h-screen overflow-hidden">
+
+        <!-- Site header -->
+        <header class="absolute w-full z-30">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="flex items-center justify-between h-16 md:h-20">
+
+                    <!-- Site branding -->
+                    <div class="shrink-0 mr-4">
+                        <!-- Logo -->
+                        <a class="block group" href="index.html" aria-label="Cruip">
+                            <img src="./images/logo.svg" width="36" height="28" alt="Logo" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Page content -->
+        <main class="grow">
+
+            <!-- Subscribe -->
+            <section>
+                <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                    <div class="pt-16 md:pt-40">
+                        <div class="relative">
+            
+                            <!-- Background -->
+                            <div class="absolute inset-0 bg-linear-to-br from-slate-900 to-slate-800 rounded-3xl -mx-20 -z-10 overflow-hidden" aria-hidden="true">
+                                <!-- Illustration -->
+                                <div class="absolute -top-16 left-1/2 -translate-x-1/3 md:-translate-x-1/2 pointer-events-none -z-10 blur-2xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2106" height="1327">
+                                        <defs>
+                                            <filter id="hi-a" width="133.3%" height="131.3%" x="-16.7%" y="-15.6%" filterUnits="objectBoundingBox">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="0" />
+                                            </filter>
+                                            <filter id="hi-b" width="133.3%" height="131.3%" x="-16.7%" y="-15.6%" filterUnits="objectBoundingBox">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="0" />
+                                            </filter>
+                                            <filter id="hi-c" width="159.9%" height="145%" x="-29.9%" y="-22.5%" filterUnits="objectBoundingBox">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="0" />
+                                            </filter>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="#6D28D9" fill-opacity=".72" d="M1110.164 893.257C1191.124 1079.102 1484 839.962 1484 626.315S883.228 0 669.507 0s40.54 412.668 40.54 626.315c0 213.647 319.156 81.096 400.117 266.942Z" filter="url(#hi-a)" transform="translate(0 -605)" />
+                                            <path fill="#67E8F9" fill-opacity=".64" d="M1732.164 1753.257c80.96 185.845 373.836-53.295 373.836-266.942S1505.228 860 1291.507 860s40.54 412.668 40.54 626.315c0 213.647 319.156 81.096 400.117 266.942Z" filter="url(#hi-b)" transform="translate(0 -605)" />
+                                            <path fill="#F472B6" fill-opacity=".8" d="M1191.108 871C1338.988 871 1631 635.765 1631 487.507 1631 339.248 1625.874 205 1477.994 205s-267.76 120.187-267.76 268.445c0 148.259-167.006 397.555-19.126 397.555Z" filter="url(#hi-c)" transform="translate(0 -605)" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Sparkles -->
+                            <div class="absolute top-0 -mt-4 left-1/2 -translate-x-1/2 pointer-events-none -z-10 hidden md:block" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1270" height="483">
+                                    <g fill="#FCD34D" fill-rule="nonzero">
+                                        <path d="M500 13.283A22.888 22.888 0 0 0 511.495.206c.125-.345 2.162 11.236 9.026 13.47 0 0-8.305 3.98-10.272 11.862.008.11-.47-6.26-10.249-12.255ZM547.29 36.768a24 24 0 0 0 12.06-13.76c.13-.36 2.26 11.8 9.5 14.14 0 0-8.71 4.18-10.78 12.45-.03.11-.53-6.57-10.78-12.83ZM373 468.47c5.425.258 10.73-1.707 14.754-5.466.247-.223-3.208 10.084 1.246 14.993l-.344-.01c-1.611-.023-8.525.176-12.907 5.012-.068.072 2.332-5.303-2.749-14.53Z" />
+                                    </g>
+                                </svg>
+                            </div>
+            
+                            <!-- Content -->
+                            <div class="py-12 md:py-20 -mx-20 px-20">
+                                <div class="max-w-3xl mx-auto text-center">
+                                    <h1 class="h1 font-hkgrotesk text-slate-100 mb-12">Suscríbete desde tu plataforma favorita</h1>
+                                    <!-- Buttons -->
+                                    <div class="-m-1.5 max-w-xl mx-auto mb-8" id="platforms-list">
+                                        <!-- Las plataformas se cargan dinámicamente desde data/platforms.json -->
+                                    </div>
+                                    <!-- Subscribe -->
+                                    <div class="max-w-[360px] mx-auto">
+                                        <div class="text-xs text-slate-500 font-medium uppercase italic mb-8">Suscríbete por RSS feed</div>
+                                        <div class="w-full">
+                                            <label class="sr-only" for="url">URL</label>
+                                            <div class="relative flex items-center" x-data>
+                                                <div class="absolute inset-0 opacity-60 bg-linear-to-r from-slate-700 to-slate-700/50 rounded-full pointer-events-none -z-10" aria-hidden="true"></div>
+                                                <input id="url" type="text" class="form-input w-full bg-transparent border-transparent text-slate-300 focus:border-blue-300 focus:ring-0 pr-24 text-sm" value="" x-ref="input" data-rss-feed />
+                                                <button class="absolute inset-0 left-auto text-sm pl-2 pr-3 font-medium text-blue-500" @click="navigator.clipboard.writeText($refs.input.value);$refs.input.select();">
+                                                    <span class="absolute inset-0 right-auto w-px -ml-px my-2 bg-slate-600" aria-hidden="true"></span>
+                                                    <span>Copiar URL</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section>
+                <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                    <div class="py-12 md:py-20">
+            
+                        <div class="grid md:grid-cols-3 gap-5 md:gap-16">
+                            <!-- Item -->
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                                        <path class="fill-blue-500" fill-rule="nonzero" d="m15.872.648 1.536 1.28-11.34 13.61-5.482-5.482L2 8.642l3.933 3.933L15.872.648Zm6 0 1.536 1.28-11.34 13.61-2.482-2.482L11 11.642l.933.933L21.872.648Z" />
+                                    </svg>
+                                    <div class="font-hkgrotesk font-extrabold text-lg text-slate-100">Comunidad Global</div>
+                                </div>
+                                <div class="text-slate-500">
+                                    Únete a nuestra comunidad global de entusiastas de la tecnología. Conecta con personas que comparten tu pasión por la innovación y el análisis profundo.
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                                        <path class="fill-blue-500" fill-rule="nonzero" d="m15.872.648 1.536 1.28-11.34 13.61-5.482-5.482L2 8.642l3.933 3.933L15.872.648Zm6 0 1.536 1.28-11.34 13.61-2.482-2.482L11 11.642l.933.933L21.872.648Z" />
+                                    </svg>
+                                    <div class="font-hkgrotesk font-extrabold text-lg text-slate-100">Comunidad Global</div>
+                                </div>
+                                <div class="text-slate-500">
+                                    Únete a nuestra comunidad global de entusiastas de la tecnología. Conecta con personas que comparten tu pasión por la innovación y el análisis profundo.
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                                        <path class="fill-blue-500" fill-rule="nonzero" d="m15.872.648 1.536 1.28-11.34 13.61-5.482-5.482L2 8.642l3.933 3.933L15.872.648Zm6 0 1.536 1.28-11.34 13.61-2.482-2.482L11 11.642l.933.933L21.872.648Z" />
+                                    </svg>
+                                    <div class="font-hkgrotesk font-extrabold text-lg text-slate-100">Comunidad Global</div>
+                                </div>
+                                <div class="text-slate-500">
+                                    Únete a nuestra comunidad global de entusiastas de la tecnología. Conecta con personas que comparten tu pasión por la innovación y el análisis profundo.
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="./js/vendors/alpinejs.min.js" defer></script>
+    <script src="./js/vendors/aos.js"></script>
+    <script src="./js/vendors/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/data-loader.js"></script>
+
+</body>
+
+</html>

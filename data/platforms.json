@@ -1,0 +1,47 @@
+{
+  "platforms": [
+    {
+      "id": 1,
+      "name": "Apple Podcasts",
+      "url": "https://podcasts.apple.com/us/podcast/disertaciones-tecnol%C3%B3gicas/id1794910022",
+      "isLink": true
+    },
+    {
+      "id": 2,
+      "name": "Spotify",
+      "url": "https://open.spotify.com/show/7F1w1lRwF8Og2IAUVxC9DX",
+      "isLink": true
+    },
+    {
+      "id": 3,
+      "name": "Google Podcasts",
+      "url": "#",
+      "isLink": false
+    },
+    {
+      "id": 4,
+      "name": "Overcast",
+      "url": "#",
+      "isLink": false
+    },
+    {
+      "id": 5,
+      "name": "Amazon Music",
+      "url": "#",
+      "isLink": false
+    },
+    {
+      "id": 6,
+      "name": "Pocket Casts",
+      "url": "#",
+      "isLink": false
+    },
+    {
+      "id": 7,
+      "name": "Castro",
+      "url": "#",
+      "isLink": false
+    }
+  ],
+  "rssFeed": "https://cruip.com/podcast"
+}

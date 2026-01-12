@@ -1,0 +1,19 @@
+services:
+  nginx:
+    build: .
+    container_name: disertaciones-tech
+    ports:
+      - "8080:80"
+    volumes:
+      # Montar todos los archivos y directorios del proyecto
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./podcast.html:/usr/share/nginx/html/podcast.html
+      - ./subscribe.html:/usr/share/nginx/html/subscribe.html
+      - ./style.css:/usr/share/nginx/html/style.css
+      - ./css:/usr/share/nginx/html/css
+      - ./js:/usr/share/nginx/html/js
+      - ./images:/usr/share/nginx/html/images
+      - ./fonts:/usr/share/nginx/html/fonts
+      - ./data:/usr/share/nginx/html/data
+      - ./audio:/usr/share/nginx/html/audio
+    restart: unless-stopped
