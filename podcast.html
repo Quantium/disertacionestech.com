@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Episodio - Disertaciones Tecnológicas</title>
-    <meta name="description" content="Escucha episodios de Disertaciones Tecnológicas - Un análisis profundo sobre tecnología, innovación y sociedad.">
+    <meta name="description" content="De la popó de caballo a algoritmos de simulación urbana - Analizamos la evolución urbana y cómo los algoritmos de simulación ayudan a planificar mejores ciudades con Vicente Torres.">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="./css/vendors/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/vendors/swiper-bundle.min.css" />
@@ -58,7 +58,7 @@
             
                             <!-- Background -->
                             <div class="absolute inset-0 bg-linear-to-br from-slate-900 to-slate-800 rounded-3xl -mx-20 -z-10 overflow-hidden" aria-hidden="true">
-                                <img class="w-full h-full object-cover rounded-3xl" src="./images/podcast-single.png" width="1270" height="408" alt="Podcast image">
+                                <img class="hero-image w-full h-full object-cover rounded-3xl" src="./images/podcast-spot-04.jpg" width="1270" height="408" alt="De la popó de caballo a algoritmos de simulación urbana">
                             </div>
                 
                             <!-- Content -->
@@ -67,8 +67,8 @@
                                     <!-- Left content -->
                                     <div class="max-w-3xl">
                                         <!-- Copy -->
-                                        <h1 class="h2 font-hkgrotesk text-slate-100 mb-4">Super Excited (aka The Saturday Edition)</h1>
-                                        <div class="font-hkgrotesk text-white font-medium opacity-80 mb-8">Indie Stories · Jan 24 · Episode 234</div>
+                                        <h1 class="hero-title h2 font-hkgrotesk text-slate-100 mb-4">De la popó de caballo a algoritmos de simulación urbana</h1>
+                                        <div class="hero-metadata font-hkgrotesk text-white font-medium opacity-80 mb-8">Urbanismo y Datos · 31 oct · Episodio 7</div>
 
                                         <!-- Player -->
                                         <div class="relative px-4 py-5" x-data="audioplayer" @go-to.window="goToTime($event.detail)" aria-label="Audio Player" role="region">
@@ -294,58 +294,54 @@
                                 <!-- Notes -->
                                 <div>
                                     <h2 class="text-3xl md:text-4xl font-hkgrotesk font-extrabold mb-4">Notas</h2>
-                                    <p class="text-slate-400">
-                                        In this episode, It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the with the release of letraset sheets containing passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                    </p>
+                                    <div class="episode-notes">
+                                        <p class="text-slate-400 mb-4">
+                                            ¿Cómo la tecnología nos salva de nuestras propias predicciones catastróficas? Una charla sobre movilidad, datos y el futuro de las ciudades.
+                                        </p>
+                                        <p class="text-slate-400 mb-4">
+                                            En 1894, el Times de Londres predijo que en 50 años cada calle de la ciudad estaría enterrada bajo tres metros de estiércol de caballo. Parecía un problema sin solución, hasta que la tecnología (el automóvil) cambió las reglas del juego. Hoy, nuestras ciudades enfrentan nuevos "estiércoles": el tráfico imposible y la ineficiencia logística.
+                                        </p>
+                                        <p class="text-slate-400 mb-4">
+                                            En este episodio de Disertaciones Tecnológicas, me siento con Vicente Torres, experto en movilidad y asuntos públicos (ex-Urbvan), para analizar cómo hemos pasado de limpiar calles a limpiar datos. Discutimos cómo los algoritmos de simulación no solo están optimizando rutas, sino que están rediseñando la infraestructura misma de nuestras urbes.
+                                        </p>
+                                        <p class="text-slate-400">
+                                            Exploramos la tensión entre la regulación gubernamental rígida y la innovación tecnológica fluida, y por qué entender la física de los sistemas complejos es más útil para un urbanista moderno que saber poner asfalto. Una conversación obligada para entender por qué tu viaje al trabajo es como es y cómo podría ser en el futuro.
+                                        </p>
+                                    </div>
                                 </div>
                                 <!-- Topics -->
                                 <div x-data>
                                     <h3 class="h3 font-hkgrotesk mb-4">Temas</h3>
-                                    <div>
+                                    <div class="episode-topics">
                                         <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '0:25')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">0:25</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Jason's first podcast ever</span>
+                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">0:25</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">La crisis del estiércol de 1894: Por qué los problemas lineales de las ciudades a menudo tienen soluciones exponenciales e inesperadas</span>
                                         </button>
                                         <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '0:53')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">0:53</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Helen's been on other podcasts: Startups for the Rest of Us, Indie Bites, Indie Worldwide</span>
+                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">0:53</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Simulación vs. Infraestructura: Cómo los "gemelos digitales" de las ciudades permiten cometer errores en la computadora para no cometerlos en el cemento</span>
                                         </button>
                                         <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '1:22')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">1:22</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Should we invest in the "auto publish to YouTube" feature?</span>
+                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">1:22</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">El dilema de la regulación: ¿Por qué las leyes de tránsito siempre van 10 años detrás de la tecnología de movilidad?</span>
                                         </button>
                                         <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '1:48')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">1:48</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">The best features the ones that feel like "magic" when a customer uses them</span>
+                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">1:48</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Algoritmos en la vida real: El caso de las rutas dinámicas y cómo el transporte a demanda (tipo Urbvan) desafía el modelo tradicional de transporte público</span>
                                         </button>
                                         <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '2:01')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">2:01</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">The "wait and see" product development philosophy</span>
-                                        </button>
-                                        <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '2:24')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">2:24</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">A new podcast website builder CMS and website designs</span>
-                                        </button>
-                                        <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '2:45')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">2:45</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Making a few new podcast website themes</span>
-                                        </button>
-                                        <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '2:57')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">2:57</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">How we run our weekly team meetings</span>
+                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">2:01</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Datos para humanos: Cómo traducir terabytes de información de tráfico en una mejor calidad de vida para el ciudadano de a pie</span>
                                         </button>
                                     </div>
                                 </div>
                                 <!-- Contributors -->
                                 <div>
                                     <h3 class="h3 font-hkgrotesk mb-4">Colaboradores</h3>
-                                    <div class="text-slate-400 space-y-3">
+                                    <div class="episode-contributors text-slate-400 space-y-3">
                                         <p>
-                                            <span class="text-slate-400">—</span> <a class="font-medium text-slate-100 underline hover:no-underline" href="#0">Jon Buda</a> lives in London, UK. He's been involved in the podcasting world since 2013, and has been building software since 2002.
-                                        </p>
-                                        <p>
-                                            <span class="text-slate-400">—</span> <a class="font-medium text-slate-100 underline hover:no-underline" href="#0">Mark Mitchel</a> lives in London, UK. He's been involved in the podcasting world since 2013, and has been building software since 2002.
-                                        </p>
-                                        <p>
-                                            <span class="text-slate-400">—</span> <a class="font-medium text-slate-100 underline hover:no-underline" href="#0">Mary James</a> lives in London, UK. He's been involved in the podcasting world since 2013, and has been building software since 2002.
+                                            <span class="text-slate-400">—</span> <a class="font-medium text-slate-100 underline hover:no-underline" href="#0">Vicente Torres</a> es una voz autorizada en la intersección entre tecnología, movilidad y política pública. Con experiencia liderando estrategias de asuntos públicos para plataformas de movilidad como Urbvan, Vicente se especializa en utilizar datos y simulación para resolver problemas urbanos complejos. Su enfoque combina la rigurosidad técnica con una visión humanista de cómo deben funcionar las ciudades del futuro.
                                         </p>
                                     </div>
                                 </div>
                                 <!-- Notes -->
-                                <div class="text-slate-400 italic">
-                                    If you liked this episode, popularised in the with the release of letraset sheets containing passages, and more recently with desktop <a class="font-medium text-slate-100 hover:underline" href="#0">@PublishingSoftware</a>.
+                                <div class="episode-transcript text-slate-400 italic">
+                                    Vicente: "El problema nunca es la tecnología en sí, Andy. El problema es que diseñamos ciudades para herramientas del pasado. Cuando tienes un algoritmo que puede predecir el flujo de personas mejor que un semáforo programado hace veinte años, la pregunta no es si debemos usarlo, sino por qué la regulación nos impide implementarlo mañana mismo..."
                                 </div>
                             </div>
                             
@@ -358,32 +354,12 @@
                                         </svg>
                                     </div>
                                     <h4 class="font-hkgrotesk font-extrabold text-slate-100 mb-4">Anfitriones e Invitados</h4>
-                                    <ul class="space-y-3">
+                                    <ul class="episode-guest space-y-3">
                                         <li class="flex items-center">
-                                            <img class="shrink-0 rounded-full mr-3" src="./images/host-04.jpg" width="44" height="44" alt="Host 04">
+                                            <img class="shrink-0 rounded-full mr-3" src="./images/host-04.jpg" width="44" height="44" alt="Vicente Torres">
                                             <div>
-                                                <div class="font-hkgrotesk font-extrabold text-sm text-slate-100">Sarah Mendes</div>
-                                                <div>
-                                                    <a class="block font-hkgrotesk font-medium text-blue-500 text-xs hover:underline" href="#0">@saramendes</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <img class="shrink-0 rounded-full mr-3" src="./images/host-05.jpg" width="44" height="44" alt="Host 05">
-                                            <div>
-                                                <div class="font-hkgrotesk font-extrabold text-sm text-slate-100">Quentin Villard</div>
-                                                <div>
-                                                    <a class="block font-hkgrotesk font-medium text-blue-500 text-xs hover:underline" href="#0">@quentin789</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <img class="shrink-0 rounded-full mr-3" src="./images/host-06.jpg" width="44" height="44" alt="Host 06">
-                                            <div>
-                                                <div class="font-hkgrotesk font-extrabold text-sm text-slate-100">Oliver Martinez</div>
-                                                <div>
-                                                    <a class="block font-hkgrotesk font-medium text-blue-500 text-xs hover:underline" href="#0">@OliverMarti</a>
-                                                </div>
+                                                <div class="font-hkgrotesk font-extrabold text-sm text-slate-100">Vicente Torres</div>
+                                                <div class="font-hkgrotesk font-medium text-slate-400 text-xs">Experto en Movilidad y Asuntos Públicos</div>
                                             </div>
                                         </li>
                                     </ul>
@@ -614,6 +590,7 @@
     <script src="./js/vendors/aos.js"></script>
     <script src="./js/vendors/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/data-loader.js"></script>
 
 </body>
 
