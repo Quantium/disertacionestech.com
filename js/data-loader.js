@@ -203,6 +203,7 @@ class DataLoader {
             const episode = this.episodes.find(ep => ep.id === episodeId);
             if (episode) {
                 this.renderEpisode(episode);
+                this.renderCarousel();
                 this.renderSocialLinks();
             } else {
                 console.error(`Episodio con id ${episodeId} no encontrado. Redirigiendo a index.html`);
@@ -224,6 +225,11 @@ class DataLoader {
 
     // Renderizar página de episodio individual
     renderEpisode(episode) {
+        // Actualizar título de la página
+        if (document.title && episode.title) {
+            document.title = `${episode.title} - Disertaciones Tecnológicas`;
+        }
+        
         // Actualizar meta description
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
@@ -249,11 +255,6 @@ class DataLoader {
             heroImage.setAttribute('alt', episode.title);
         }
 
-        // Actualizar audio file
-        const audioFile = document.querySelector('#audiofile');
-        if (audioFile && episode.audioFile) {
-            audioFile.setAttribute('src', episode.audioFile);
-        }
 
         // Actualizar iframe de Spotify
         const spotifyEmbed = document.querySelector('.spotify-embed');
@@ -270,6 +271,26 @@ class DataLoader {
                 }
             }
             spotifyEmbed.setAttribute('src', embedUrl);
+        }
+        
+        // Actualizar Open Graph y Twitter Cards
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        const ogDescription = document.querySelector('meta[property="og:description"]');
+        const ogImage = document.querySelector('meta[property="og:image"]');
+        const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+        const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+        const twitterImage = document.querySelector('meta[name="twitter:image"]');
+        if (ogTitle) ogTitle.setAttribute('content', `${episode.title} - Disertaciones Tecnológicas`);
+        if (ogDescription) ogDescription.setAttribute('content', episode.description);
+        if (ogImage && episode.carouselImage) {
+            const imageUrl = episode.carouselImage.startsWith('http') ? episode.carouselImage : `https://www.disertacionestecnologicas.com${episode.carouselImage.replace('./', '/')}`;
+            ogImage.setAttribute('content', imageUrl);
+        }
+        if (twitterTitle) twitterTitle.setAttribute('content', `${episode.title} - Disertaciones Tecnológicas`);
+        if (twitterDescription) twitterDescription.setAttribute('content', episode.description);
+        if (twitterImage && episode.carouselImage) {
+            const imageUrl = episode.carouselImage.startsWith('http') ? episode.carouselImage : `https://www.disertacionestecnologicas.com${episode.carouselImage.replace('./', '/')}`;
+            twitterImage.setAttribute('content', imageUrl);
         }
 
         // Actualizar notas
@@ -336,7 +357,6 @@ class DataLoader {
                 // Actualizar solo el contenido interno del <ul>, manteniendo la estructura
                 guestContainer.innerHTML = `
                     <li class="flex items-center">
-                        <img class="shrink-0 rounded-full mr-3" src="${episode.guestInfo.image}" width="44" height="44" alt="${episode.guestInfo.name}">
                         <div>
                             <div class="font-hkgrotesk font-extrabold text-sm text-slate-100">${episode.guestInfo.name}</div>
                             <div class="font-hkgrotesk font-medium text-slate-400 text-xs">${episode.guestInfo.role}</div>
