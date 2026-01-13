@@ -1,0 +1,100 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION || 'us-east-1' }}
+
+      - name: Deploy HTML files to S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} \
+            --exclude "*" \
+            --include "*.html" \
+            --cache-control "no-cache, no-store, must-revalidate" \
+            --content-type "text/html; charset=utf-8" \
+            --delete
+
+      - name: Deploy CSS files to S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} \
+            --exclude "*" \
+            --include "*.css" \
+            --include "css/**/*" \
+            --cache-control "public, max-age=31536000, immutable" \
+            --content-type "text/css" \
+            --delete
+
+      - name: Deploy JavaScript files to S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} \
+            --exclude "*" \
+            --include "*.js" \
+            --include "js/**/*" \
+            --cache-control "public, max-age=31536000, immutable" \
+            --content-type "application/javascript" \
+            --delete
+
+      - name: Deploy image files to S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} \
+            --exclude "*" \
+            --include "images/**/*" \
+            --cache-control "public, max-age=31536000, immutable" \
+            --delete
+
+      - name: Deploy font files to S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} \
+            --exclude "*" \
+            --include "fonts/**/*" \
+            --cache-control "public, max-age=31536000, immutable" \
+            --delete
+
+      - name: Deploy data files to S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} \
+            --exclude "*" \
+            --include "data/**/*" \
+            --cache-control "public, max-age=3600" \
+            --content-type "application/json" \
+            --delete
+
+      - name: Deploy audio files to S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} \
+            --exclude "*" \
+            --include "audio/**/*" \
+            --cache-control "public, max-age=31536000" \
+            --delete
+
+      - name: Deploy root files to S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} \
+            --exclude "*" \
+            --include "robots.txt" \
+            --include "sitemap.xml" \
+            --include "humans.txt" \
+            --cache-control "public, max-age=3600" \
+            --delete
+
+      - name: Deploy style.css root file
+        run: |
+          aws s3 cp style.css s3://${{ secrets.AWS_S3_BUCKET }}/style.css \
+            --cache-control "public, max-age=31536000, immutable" \
+            --content-type "text/css"
