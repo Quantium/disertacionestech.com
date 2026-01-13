@@ -1,47 +1,259 @@
 {
   "episodes": [
     {
-      "id": 10,
-      "title": "Regulación, poder y tecnología (Parte II): Lo que no se dice sobre competencia",
+      "id": 1,
+      "title": "Disertaciones Tecnológicas",
       "link": "podcast.html",
       "image": "./images/podcast-spot-01.jpg",
       "carouselImage": "./images/carousel-01.png",
-      "date": "15 dic",
-      "episodeNumber": 10,
-      "category": "Política Tecnológica",
-      "categoryId": "4",
-      "description": "Segunda parte de la conversación con Gabriel González. Entramos a terreno incómodo: cómo la regulación realmente funciona cuando se cruza con tecnología, poder económico y decisiones políticas."
+      "date": "04 ene",
+      "episodeNumber": 1,
+      "category": "Introducción",
+      "categoryId": "1",
+      "description": "Episodio introductorio donde presento la visión del podcast: un espacio para explorar el lado humano, técnico y estratégico de la tecnología.",
+      "subtitle": "Bienvenido a Disertaciones Tecnológicas. ¿Por qué otro podcast de tecnología?",
+      "duration": "05 min",
+      "audioFile": "./audio/audio-01.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/3pDUkDY82UTt5hZYMxDKtS?si=7067f09bf19f4418?utm_source=generator&theme=0",
+      "notes": {
+        "intro": "Arrancamos este proyecto con una misión clara: ir más allá del código y el hardware.",
+        "body": [
+          "En este primer episodio, Andy Aragon, consultor en innovación y ex-CTO, explica el propósito de 'Disertaciones Tecnológicas'.",
+          "Hablaremos de liderazgo, sistemas complejos, machine learning y diseño organizacional, pero siempre con un enfoque en las reflexiones reales para quienes construyen el futuro."
+        ]
+      },
+      "topics": [
+        {
+          "time": "0:00",
+          "title": "Bienvenida y manifiesto del podcast"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Andy Aragon",
+          "bio": "Consultor en innovación y tecnología, con más de una década como CTO en startups, banca y logística.",
+          "role": "Host"
+        }
+      ],
+      "transcriptSnippet": "Andy: \"La tecnología no es solo herramientas, es cultura y estrategia.\"",
+      "guestInfo": {}
     },
     {
-      "id": 9,
-      "title": "Inteligencia Artificial para abogados y monopolios tecnológicos (Parte I)",
+      "id": 2,
+      "title": "Tipos de CTOs",
       "link": "podcast.html",
       "image": "./images/podcast-spot-02.jpg",
       "carouselImage": "./images/carousel-02.png",
-      "date": "04 nov",
-      "episodeNumber": 9,
-      "category": "Legal Tech",
-      "categoryId": "4",
-      "description": "Entrevista a Gabriel González, abogado experto en materia económica. Hablamos sobre los monopolios tecnológicos, el impacto de la IA en el derecho y los desafíos legales del futuro."
+      "date": "19 feb",
+      "episodeNumber": 2,
+      "category": "Liderazgo Técnico",
+      "categoryId": "2",
+      "description": "Mi perspectiva de los diferentes tipos de CTOs y cómo los clasifico según las necesidades de la organización.",
+      "subtitle": "¿Eres un CTO de producto, de infraestructura o un visionario? Clasificando el liderazgo técnico.",
+      "duration": "48 min",
+      "audioFile": "./audio/audio-02.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/5L6qrDr2vtG1JKMkJ0qYfg?si=3354d777a4294fb4?utm_source=generator&theme=0",
+      "notes": {
+        "intro": "No todos los Directores de Tecnología son iguales, ni todas las empresas necesitan el mismo perfil.",
+        "body": [
+          "Analizamos los arquetipos de CTOs que existen en el mercado actual. Desde el 'CTO fundador' que escribe código hasta el 'CTO ejecutivo' que gestiona personas y presupuestos.",
+          "Discutimos qué perfil es ideal para cada etapa de una startup y los errores comunes al contratar al líder técnico equivocado."
+        ]
+      },
+      "topics": [
+        {
+          "time": "05:10",
+          "title": "El CTO 'Hacker' vs. El CTO 'Manager'"
+        },
+        {
+          "time": "20:15",
+          "title": "La evolución del rol conforme la empresa escala"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Andy Aragon",
+          "bio": "Host del podcast.",
+          "role": "Host"
+        }
+      ],
+      "transcriptSnippet": "Andy: \"El error número uno es buscar un CTO que sepa de todo, en lugar de uno que sepa lo que tu empresa necesita hoy.\"",
+      "guestInfo": {}
     },
     {
-      "id": 8,
-      "title": "De computadoras mainframe a algoritmos de administración energética (1a Parte)",
+      "id": 3,
+      "title": "EPISODIO ESPECIAL: RENUNCIÉ A MI PUESTO DE CTO—AHORA APUESTO TODO A MI VISIÓN",
       "link": "podcast.html",
       "image": "./images/podcast-spot-03.jpg",
       "carouselImage": "./images/carousel-03.png",
-      "date": "01 nov",
-      "episodeNumber": 8,
-      "category": "Historia Tech",
+      "date": "11 feb",
+      "episodeNumber": 3,
+      "category": "Carrera y Vida",
+      "categoryId": "3",
+      "description": "Un episodio personal sobre la decisión de dejar un puesto C-level para perseguir una visión propia de consultoría e innovación.",
+      "subtitle": "Dejar la seguridad corporativa por la incertidumbre del emprendimiento: mi historia.",
+      "duration": "35 min",
+      "audioFile": "./audio/audio-03.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/7KHWqdNzTW4vTfsNlvLrXm?si=68639e3b64954f9c?utm_source=generator&theme=0",
+      "notes": {
+        "intro": "A veces, el camino seguro es el más peligroso para tu crecimiento personal.",
+        "body": [
+          "Andy comparte los motivos detrás de su renuncia como CTO. Una reflexión honesta sobre el burnout, la alineación de valores y la búsqueda de impacto real.",
+          "Los desafíos de soltar el título y la identidad corporativa para construir algo desde cero."
+        ]
+      },
+      "topics": [
+        {
+          "time": "02:30",
+          "title": "El momento de la decisión"
+        },
+        {
+          "time": "15:45",
+          "title": "Miedo vs. Visión: La psicología del cambio"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Andy Aragon",
+          "bio": "Host",
+          "role": "Host"
+        }
+      ],
+      "transcriptSnippet": "Andy: \"Renunciar no fue el final, fue el inicio de mi verdadera carrera.\"",
+      "guestInfo": {}
+    },
+    {
+      "id": 4,
+      "title": "Avance de la Temporada 2: Innovación, Liderazgo Tecnológico y Entrevistas con Expertos",
+      "link": "podcast.html",
+      "image": "./images/podcast-spot-04.jpg",
+      "carouselImage": "./images/carousel-04.png",
+      "date": "12 mar",
+      "episodeNumber": 4,
+      "category": "Novedades",
+      "categoryId": "4",
+      "description": "Presentación de lo que viene en la segunda temporada: un enfoque renovado con invitados de alto calibre.",
+      "subtitle": "¿Qué esperar de la nueva etapa de Disertaciones Tecnológicas?",
+      "duration": "15 min",
+      "audioFile": "./audio/audio-04.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/3SxhSKQPG4zEFZY3L1nPPy?si=a2de5a3ffe874524?utm_source=generator&theme=0",
+      "notes": {
+        "intro": "La tecnología la hacen las personas. En esta temporada, traemos a las personas que la están haciendo.",
+        "body": [
+          "Anuncio de la nueva estructura del podcast, incluyendo entrevistas con expertos en movilidad, legaltech, retail y energía.",
+          "Un vistazo a los temas que definirán el año: IA aplicada, regulación digital y transformación organizacional."
+        ]
+      },
+      "topics": [
+        {
+          "time": "01:00",
+          "title": "Nuevos formatos y colaboradores"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Andy Aragon",
+          "bio": "Host",
+          "role": "Host"
+        }
+      ],
+      "transcriptSnippet": "Andy: \"Vamos a traer conversaciones que normalmente suceden a puerta cerrada.\"",
+      "guestInfo": {}
+    },
+    {
+      "id": 5,
+      "title": "Fire Fighting 🧑‍🚒 🔥",
+      "link": "podcast.html",
+      "image": "./images/podcast-spot-05.jpg",
+      "carouselImage": "./images/carousel-05.png",
+      "date": "14 mar",
+      "episodeNumber": 5,
+      "category": "Cultura Organizacional",
+      "categoryId": "5",
+      "description": "Analizamos el fenómeno del 'firefighting' en las organizaciones: el ciclo destructivo de resolver crisis inmediatas sin abordar los problemas de fondo.",
+      "subtitle": "¿Tu empresa vive apagando fuegos? Cómo salir del ciclo reactivo.",
+      "duration": "25 min",
+      "audioFile": "./audio/audio-05.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/04nODb78QAKjyYVjvgCdj2?si=a609a33544794e43?utm_source=generator&theme=0",
+      "notes": {
+        "intro": "Ser un héroe que apaga incendios se siente bien, pero es síntoma de un sistema enfermo.",
+        "body": [
+          "Hablo sobre el ciclo destructivo de resolver urgencias. Descubre qué es realmente el firefighting y cómo impacta en la productividad.",
+          "Discutimos estrategias prácticas para pasar de una cultura reactiva a una preventiva, donde la planificación vence a la urgencia."
+        ]
+      },
+      "topics": [
+        {
+          "time": "03:20",
+          "title": "La adicción a la urgencia"
+        },
+        {
+          "time": "12:10",
+          "title": "De bombero a arquitecto: Cambiando el mindset"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Andy Aragon",
+          "bio": "Host",
+          "role": "Host"
+        }
+      ],
+      "transcriptSnippet": "Andy: \"Si siempre estás apagando fuegos, nunca tendrás tiempo para construir algo a prueba de incendios.\"",
+      "guestInfo": {}
+    },
+    {
+      "id": 6,
+      "title": "De Philips al AI-powered Retail: Disertando con Alan Cymberknoh",
+      "link": "podcast.html",
+      "image": "./images/podcast-spot-06.jpg",
+      "carouselImage": "./images/carousel-06.png",
+      "date": "16 abr",
+      "episodeNumber": 6,
+      "category": "Product Management",
       "categoryId": "6",
-      "description": "¿Cómo fue la carrera de un Jefe de Tecnología de la CFE? Una mirada profunda a la evolución tecnológica en el sector energético, desde los mainframes hasta los algoritmos modernos."
+      "description": "Conversamos con Alan Cymberknoh sobre el verdadero rol del Product Management y la transición de grandes corporativos a la agilidad del retail con IA.",
+      "subtitle": "La evolución del producto: de la electrónica de consumo a la inteligencia artificial en retail.",
+      "duration": "60 min",
+      "audioFile": "./audio/audio-06.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/3psYYSmK52JK32FEUh48tc?si=b8f21afce2ab412b?utm_source=generator&theme=0",
+      "notes": {
+        "intro": "El Product Management ha evolucionado drásticamente. Alan nos cuenta cómo.",
+        "body": [
+          "En este episodio, tengo el placer de conversar con Alan Cymberknoh, referente global del Product Management.",
+          "Exploramos su trayectoria desde Philips hasta liderar estrategias de IA en retail, y cómo la tecnología está redefiniendo la experiencia de compra."
+        ]
+      },
+      "topics": [
+        {
+          "time": "05:00",
+          "title": "Lecciones de Philips: Hardware vs Software"
+        },
+        {
+          "time": "30:20",
+          "title": "IA en Retail: Más allá del hype"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Alan Cymberknoh",
+          "bio": "Referente global en Product Management con experiencia en Philips y tecnología para Retail.",
+          "role": "Experto en Producto"
+        }
+      ],
+      "transcriptSnippet": "Alan: \"El producto no es el software, es el valor que entregas al usuario.\"",
+      "guestInfo": {
+        "name": "Alan Cymberknoh",
+        "role": "Experto en Product Management",
+        "image": "./images/alan-cymberknoh.png"
+      }
     },
     {
       "id": 7,
       "title": "De la popó de caballo a algoritmos de simulación urbana: Disertando con Vicente Torres",
       "link": "podcast.html",
-      "image": "./images/podcast-spot-04.jpg",
-      "carouselImage": "./images/carousel-04.png",
+      "image": "./images/podcast-spot-07.jpg",
+      "carouselImage": "./images/carousel-07.png",
       "date": "31 oct",
       "episodeNumber": 7,
       "category": "Urbanismo y Datos",
@@ -50,6 +262,7 @@
       "subtitle": "¿Cómo la tecnología nos salva de nuestras propias predicciones catastróficas? Una charla sobre movilidad, datos y el futuro de las ciudades.",
       "duration": "54 min",
       "audioFile": "./audio/audio.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/4lgf6eL3OKwNxJjp6bfiGR?si=78e8cd62bf2d46f3?utm_source=generator&theme=0",
       "notes": {
         "intro": "En 1894, el Times de Londres predijo que en 50 años cada calle de la ciudad estaría enterrada bajo tres metros de estiércol de caballo. Parecía un problema sin solución, hasta que la tecnología (el automóvil) cambió las reglas del juego. Hoy, nuestras ciudades enfrentan nuevos \"estiércoles\": el tráfico imposible y la ineficiencia logística.",
         "body": [
@@ -94,76 +307,142 @@
       }
     },
     {
-      "id": 6,
-      "title": "De Philips al AI-powered Retail: El verdadero rol del Product Management",
-      "link": "podcast.html",
-      "image": "./images/podcast-spot-05.jpg",
-      "carouselImage": "./images/carousel-05.png",
-      "date": "16 abr",
-      "episodeNumber": 6,
-      "category": "Product Management",
-      "categoryId": "8",
-      "description": "Disertando con Alan Cymberknoh sobre cómo la inteligencia artificial está transformando el retail y cuál es el papel crucial del Product Management en esta nueva era."
-    },
-    {
-      "id": 5,
-      "title": "Fire Fighting: El ciclo destructivo de las urgencias",
-      "link": "podcast.html",
-      "image": "./images/podcast-spot-06.jpg",
-      "carouselImage": "./images/carousel-06.png",
-      "date": "14 mar",
-      "episodeNumber": 5,
-      "category": "Cultura Organizacional",
-      "categoryId": "9",
-      "description": "Hablo sobre el fenómeno del 'firefighting' en las organizaciones: ese ciclo de resolver crisis inmediatas sin abordar los problemas de fondo y cómo salir de esa dinámica reactiva."
-    },
-    {
-      "id": 4,
-      "title": "Avance de la Temporada 2: Innovación y Liderazgo Tecnológico",
-      "link": "podcast.html",
-      "image": "./images/podcast-spot-07.jpg",
-      "carouselImage": "./images/carousel-07.png",
-      "date": "12 mar",
-      "episodeNumber": 4,
-      "category": "Novedades",
-      "categoryId": "5",
-      "description": "Prepárate para la segunda temporada. Temas clave: mejores prácticas de innovación, habilidades esenciales para un CTO, metodologías ágiles y arquitectura de sistemas."
-    },
-    {
-      "id": 3,
-      "title": "Episodio Especial: Renuncié a mi puesto de CTO, ahora apuesto a mi visión",
+      "id": 8,
+      "title": "De computadoras mainframe a algoritmos de administración energética (1a Parte)",
       "link": "podcast.html",
       "image": "./images/podcast-spot-08.jpg",
       "carouselImage": "./images/carousel-08.png",
-      "date": "11 feb",
-      "episodeNumber": 3,
-      "category": "Carrera y Liderazgo",
-      "categoryId": "10",
-      "description": "Una reflexión personal sobre el emprendimiento, el riesgo y el cambio de rumbo profesional al dejar un puesto ejecutivo para perseguir una visión propia."
+      "date": "01 nov",
+      "episodeNumber": 8,
+      "category": "Energía y Sistemas",
+      "categoryId": "8",
+      "description": "¿Cómo fue la carrera de un Jefe de Tecnología de la CFE? Un viaje desde los mainframes hasta la gestión moderna de la energía.",
+      "subtitle": "Historia viva de la tecnología en México: Gestionando la energía de un país.",
+      "duration": "50 min",
+      "audioFile": "./audio/audio-08.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/2dtow7WgRf849SZeixvm6W?si=43357b09cd064576?utm_source=generator&theme=0",
+      "notes": {
+        "intro": "La infraestructura crítica de un país depende de sistemas que rara vez vemos.",
+        "body": [
+          "Primera parte de una conversación fascinante con un ex-Jefe de Tecnología de la Comisión Federal de Electricidad (CFE).",
+          "Analizamos la evolución tecnológica en el sector energético, desde las tarjetas perforadas y los mainframes gigantes hasta los algoritmos actuales de balanceo de carga."
+        ]
+      },
+      "topics": [
+        {
+          "time": "05:00",
+          "title": "La era de los Mainframes en México"
+        },
+        {
+          "time": "25:30",
+          "title": "Retos de administrar la red eléctrica nacional"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Invitado Especial",
+          "bio": "Ex-Jefe de Tecnología de la CFE con décadas de experiencia en el sector energético.",
+          "role": "Experto en Energía"
+        }
+      ],
+      "transcriptSnippet": "Invitado: \"Cuando se va la luz, todos se acuerdan de nosotros. Cuando funciona, somos invisibles.\"",
+      "guestInfo": {
+        "name": "Ex-CTO CFE",
+        "role": "Experto en Energía",
+        "image": "./images/guest-cfe.png"
+      }
     },
     {
-      "id": 2,
-      "title": "Tipos de CTOs: Liderazgo para cada etapa",
+      "id": 9,
+      "title": "Inteligencia Artificial para abogados. Monopolios tecnológicos y más (Parte I)",
       "link": "podcast.html",
       "image": "./images/podcast-spot-09.jpg",
       "carouselImage": "./images/carousel-09.png",
-      "date": "19 feb",
-      "episodeNumber": 2,
-      "category": "Liderazgo Técnico",
-      "categoryId": "11",
-      "description": "Exploramos los diferentes perfiles de Chief Technology Officers (CTOs) y analizamos qué tipo de liderazgo tecnológico necesita una empresa según su etapa de crecimiento."
+      "date": "04 nov",
+      "episodeNumber": 9,
+      "category": "LegalTech",
+      "categoryId": "9",
+      "description": "Entrevista a Gabriel González, Top 5 Abogado en materia económica, sobre el impacto de la IA en el derecho y los monopolios tech.",
+      "subtitle": "¿Puede la ley seguir el ritmo de la IA? Competencia económica en la era digital.",
+      "duration": "45 min",
+      "audioFile": "./audio/audio-09.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/5CzlkNbMqOTuJFQRHlnpBB?si=8a42e065805e4568?utm_source=generator&theme=0",
+      "notes": {
+        "intro": "La intersección entre leyes y código es el nuevo campo de batalla.",
+        "body": [
+          "Conversamos con Gabriel González sobre cómo la Inteligencia Artificial está transformando la práctica legal.",
+          "Discutimos los desafíos de regular monopolios tecnológicos globales desde jurisdicciones locales."
+        ]
+      },
+      "topics": [
+        {
+          "time": "10:00",
+          "title": "IA sustituyendo a los abogados junior"
+        },
+        {
+          "time": "35:00",
+          "title": "Definiendo monopolio en el siglo XXI"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Gabriel González",
+          "bio": "Reconocido como Top 5 Abogado en materia económica, experto en competencia y regulación digital.",
+          "role": "Abogado Experto"
+        }
+      ],
+      "transcriptSnippet": "Gabriel: \"Regular a las Big Tech con leyes del siglo XX es intentar atrapar humo con las manos.\"",
+      "guestInfo": {
+        "name": "Gabriel González",
+        "role": "Abogado en materia económica",
+        "image": "./images/gabriel-gonzalez.png"
+      }
     },
     {
-      "id": 1,
-      "title": "Disertaciones Tecnológicas: Episodio Introductorio",
+      "id": 10,
+      "title": "Regulación, poder y tecnología (Parte II): Lo que no se dice sobre competencia",
       "link": "podcast.html",
       "image": "./images/podcast-spot-10.jpg",
       "carouselImage": "./images/carousel-10.png",
-      "date": "04 ene",
-      "episodeNumber": 1,
-      "category": "Introducción",
-      "categoryId": "5",
-      "description": "Bienvenidos a Disertaciones Tecnológicas. En este primer episodio exploramos el lado humano, técnico y estratégico de la tecnología y lo que está por venir."
+      "date": "15 dic",
+      "episodeNumber": 10,
+      "category": "Política y Tecnología",
+      "categoryId": "10",
+      "description": "Segunda parte con Gabriel González. Entramos a terreno incómodo: cómo la regulación realmente funciona cuando se cruza con el poder.",
+      "subtitle": "Plataformas digitales vs. Soberanía estatal. La batalla final.",
+      "duration": "26 min",
+      "audioFile": "./audio/audio-10.mp3",
+      "spotify_embed_url": "https://open.spotify.com/episode/0oJJZp1XsjD0Uo1IU9iQLD?si=ef417a55966e4cd6?utm_source=generator&theme=0",
+      "notes": {
+        "intro": "Continuamos la charla donde la dejamos, profundizando en las plataformas digitales.",
+        "body": [
+          "En esta segunda parte, analizamos lo que no se dice públicamente sobre la competencia económica.",
+          "¿Son las plataformas digitales los nuevos estados-nación? Un debate sobre poder y tecnología."
+        ]
+      },
+      "topics": [
+        {
+          "time": "02:00",
+          "title": "Plataformas digitales y poder de mercado"
+        },
+        {
+          "time": "15:00",
+          "title": "El futuro de la regulación tech en Latam"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Gabriel González",
+          "bio": "Abogado experto en competencia económica.",
+          "role": "Abogado Experto"
+        }
+      ],
+      "transcriptSnippet": "Gabriel: \"El poder ya no reside solo en los palacios de gobierno, sino en los servidores de datos.\"",
+      "guestInfo": {
+        "name": "Gabriel González",
+        "role": "Abogado en materia económica",
+        "image": "./images/gabriel-gonzalez.png"
+      }
     }
   ]
 }

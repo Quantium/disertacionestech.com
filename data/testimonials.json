@@ -2,44 +2,38 @@
   "testimonials": [
     {
       "id": 1,
-      "name": "Sarah Mendes",
-      "nickname": "@saramendes",
-      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
-      "image": "./images/testimonial-01.jpg"
+      "name": "Monserrat Reyes",
+      "comment": "Un podcast ideal para quienes buscan ver las cosas desde una perspectiva diferente. No solo analiza el panorama actual, sino que te brinda las herramientas para navegarlo. Cualquier persona en el mundo tecnológico encontrará aquí un valor inmenso. ¡Excelente trabajo, Andy Aragón!",
+      "image": "./images/montserrat-reyes.jpeg"
     },
     {
       "id": 2,
-      "name": "Michał Rutt",
-      "nickname": "@michrutt",
-      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
-      "image": "./images/testimonial-02.jpg"
+      "name": "Karla Montaño",
+      "comment": "Este podcast es el puente perfecto. Andy disecciona los problemas complejos de liderazgo con la precisión de un bisturí. Vital para entender el futuro.",
+      "image": "./images/karla-montano.jpeg"
     },
     {
       "id": 3,
-      "name": "Lina James",
-      "nickname": "@linaj87",
-      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "name": "Lina Jimenez",
+      "comment": "Andy logra explicar cómo deben fluir las organizaciones tecnológicas con la misma claridad. Sus analogías sobre infraestructura y sistemas humanos son brillantes. Es mi dosis semanal de planeación estratégica.",
       "image": "./images/testimonial-03.jpg"
     },
     {
       "id": 4,
-      "name": "Abigail Boucher",
-      "nickname": "@AbbyBoucher",
-      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "name": "Abigail Pichardo",
+      "comment": "Llevo 10 años como desarrolladora backend freelance. Este podcast es diferente: es pragmático, crudo y respeta la inteligencia técnica de su audiencia. Las discusiones sobre la realidad de ser CTO me han abierto los ojos.",
       "image": "./images/testimonial-04.jpg"
     },
     {
       "id": 5,
-      "name": "Emma Bostian",
-      "nickname": "@emmacode",
-      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "name": "Emma Armendariz",
+      "comment": "En el mundo del frontend y la educación tech, a veces nos perdemos en los frameworks y olvidamos las personas. Disertaciones Tecnológicas es mi 'reset' mental. Me ayuda a levantar la vista del código y entender la estrategia política y humana necesaria para crecer como Staff Engineer.",
       "image": "./images/testimonial-05.jpg"
     },
     {
       "id": 6,
-      "name": "Addy Osman",
-      "nickname": "@addyO",
-      "comment": "Extremely thoughtful approaches to business. I highly recommend this podcast to anyone wanting to jump into something new.",
+      "name": "Juanjo Urbina",
+      "comment": "Este podcast va directo a los puntos de dolor cultural que frenan a los equipos de alto rendimiento. Es lectura obligada (o escucha obligada) para mis Engineering Managers.",
       "image": "./images/testimonial-06.jpg"
     }
   ]

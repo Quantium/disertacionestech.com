@@ -5,21 +5,24 @@ class DataLoader {
         this.episodes = [];
         this.testimonials = [];
         this.platforms = [];
+        this.socialLinks = [];
     }
 
     // Cargar todos los datos
     async loadAll() {
         try {
-            const [episodesData, testimonialsData, platformsData] = await Promise.all([
+            const [episodesData, testimonialsData, platformsData, socialData] = await Promise.all([
                 fetch('./data/episodes.json').then(res => res.json()),
                 fetch('./data/testimonials.json').then(res => res.json()),
-                fetch('./data/platforms.json').then(res => res.json())
+                fetch('./data/platforms.json').then(res => res.json()),
+                fetch('./data/social.json').then(res => res.json())
             ]);
 
             this.episodes = episodesData.episodes;
             this.testimonials = testimonialsData.testimonials;
             this.platforms = platformsData.platforms;
             this.rssFeed = platformsData.rssFeed;
+            this.socialLinks = socialData.socialLinks;
 
             // Renderizar contenido
             this.renderCarousel();
@@ -27,6 +30,7 @@ class DataLoader {
             this.renderTestimonials();
             this.renderPlatforms();
             this.renderRSSFeed();
+            this.renderSocialLinks();
         } catch (error) {
             console.error('Error cargando datos:', error);
         }
@@ -37,9 +41,9 @@ class DataLoader {
         const carouselWrapper = document.querySelector('.carousel .swiper-wrapper');
         if (!carouselWrapper) return;
 
-        carouselWrapper.innerHTML = this.episodes.map((episode, index) => `
+        carouselWrapper.innerHTML = this.episodes.slice().reverse().map((episode, index) => `
             <div class="swiper-slide h-auto flex flex-col max-w-[446px] group">
-                <a href="${episode.link}?episode=${episode.id}">
+                <a href="${episode.link}?capitulo=${episode.id}">
                     <div class="group-odd:rotate-1 group-even:-rotate-1">
                         <div class="absolute inset-0 -z-10">
                             <img class="w-full h-full object-cover rounded-3xl" src="${episode.carouselImage}" width="446" height="200" alt="${episode.title}" />
@@ -86,13 +90,13 @@ class DataLoader {
         const episodesContainer = document.getElementById('episodes-list');
         if (!episodesContainer) return;
 
-        episodesContainer.innerHTML = this.episodes.map(episode => `
+        episodesContainer.innerHTML = this.episodes.slice().reverse().map(episode => `
             <div class="sm:flex items-center p-5 border-b border-slate-700" x-show="['0', '${episode.categoryId}'].includes(category)">
                 <div class="flex items-start mb-4 sm:mb-0">
                     <img class="shrink-0 rounded-sm ml-5 sm:ml-0 sm:mr-5 order-1 sm:order-none" src="${episode.image}" width="88" height="88" alt="${episode.title}" />
                     <div>
                         <h3 class="font-hkgrotesk font-extrabold text-lg mb-1">
-                            <a class="text-slate-100 hover:text-blue-500 transition duration-150 ease-in-out" href="${episode.link}?episode=${episode.id}">${episode.title}</a>
+                            <a class="text-slate-100 hover:text-blue-500 transition duration-150 ease-in-out" href="${episode.link}?capitulo=${episode.id}">${episode.title}</a>
                         </h3>
                         <div class="font-hkgrotesk font-medium text-sm text-slate-400 mb-1">
                             <a class="text-blue-500 hover:underline" href="#0">${episode.category}</a> <span class="text-slate-600">·</span> ${episode.date} <span class="text-slate-600">·</span> Episodio ${episode.episodeNumber}
@@ -103,7 +107,7 @@ class DataLoader {
                     </div>
                 </div>
                 <div class="shrink-0 sm:ml-5">
-                    <a href="${episode.link}?episode=${episode.id}" aria-label="Escuchar">
+                    <a href="${episode.link}?capitulo=${episode.id}" aria-label="Escuchar">
                         <img src="./images/play-02.svg" width="40" height="40" alt="Play" aria-hidden="true" />
                     </a>
                 </div>
@@ -127,7 +131,6 @@ class DataLoader {
                     <img class="shrink-0 rounded-full mr-3" src="${testimonial.image}" width="48" height="48" alt="${testimonial.name}">
                     <div>
                         <div class="font-hkgrotesk font-extrabold text-slate-100">${testimonial.name}</div>
-                        <a class="font-hkgrotesk font-medium text-blue-500 hover:underline" href="#0">${testimonial.nickname}</a>
                     </div>
                 </div>
                 <div class="text-slate-400">
@@ -163,20 +166,59 @@ class DataLoader {
         }
     }
 
+    // Renderizar enlaces sociales
+    renderSocialLinks() {
+        const socialContainers = document.querySelectorAll('.social-links');
+        if (socialContainers.length === 0) return;
+
+        // Filtrar enlaces con URL vacía
+        const validLinks = this.socialLinks.filter(link => link.url && link.url.trim() !== '');
+
+        const socialHTML = validLinks.map(link => `
+            <li>
+                <a class="flex justify-center items-center text-blue-500 hover:text-blue-600 transition duration-150 ease-in-out" href="${link.url}" aria-label="${link.ariaLabel}" target="_blank" rel="noopener noreferrer">
+                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="${link.svgPath}" />
+                    </svg>
+                </a>
+            </li>
+        `).join('');
+
+        socialContainers.forEach(container => {
+            container.innerHTML = socialHTML;
+        });
+    }
+
     // Cargar y renderizar un episodio específico para podcast.html
     async loadEpisode(episodeId) {
         try {
-            const episodesData = await fetch('./data/episodes.json').then(res => res.json());
+            const [episodesData, socialData] = await Promise.all([
+                fetch('./data/episodes.json').then(res => res.json()),
+                fetch('./data/social.json').then(res => res.json())
+            ]);
+            
             this.episodes = episodesData.episodes;
+            this.socialLinks = socialData.socialLinks;
             
             const episode = this.episodes.find(ep => ep.id === episodeId);
             if (episode) {
                 this.renderEpisode(episode);
+                this.renderSocialLinks();
             } else {
-                console.error(`Episodio con id ${episodeId} no encontrado`);
+                console.error(`Episodio con id ${episodeId} no encontrado. Redirigiendo a index.html`);
+                // Ocultar loader antes de redirigir
+                this.hideLoader();
+                setTimeout(() => {
+                    window.location.href = './index.html';
+                }, 100);
             }
         } catch (error) {
             console.error('Error cargando episodio:', error);
+            // Ocultar loader antes de redirigir
+            this.hideLoader();
+            setTimeout(() => {
+                window.location.href = './index.html';
+            }, 100);
         }
     }
 
@@ -203,7 +245,7 @@ class DataLoader {
         // Actualizar imagen del hero
         const heroImage = document.querySelector('.hero-image');
         if (heroImage) {
-            heroImage.setAttribute('src', episode.image);
+            heroImage.setAttribute('src', episode.carouselImage);
             heroImage.setAttribute('alt', episode.title);
         }
 
@@ -211,6 +253,23 @@ class DataLoader {
         const audioFile = document.querySelector('#audiofile');
         if (audioFile && episode.audioFile) {
             audioFile.setAttribute('src', episode.audioFile);
+        }
+
+        // Actualizar iframe de Spotify
+        const spotifyEmbed = document.querySelector('.spotify-embed');
+        if (spotifyEmbed && episode.spotify_embed_url) {
+            // Convertir URL de episodio a URL de embed
+            let embedUrl = episode.spotify_embed_url;
+            // Si la URL no es de embed, convertirla
+            if (embedUrl.includes('/episode/') && !embedUrl.includes('/embed/episode/')) {
+                // Extraer el ID del episodio (antes del primer ? o /)
+                const episodeIdMatch = embedUrl.match(/\/episode\/([^/?]+)/);
+                if (episodeIdMatch) {
+                    const episodeId = episodeIdMatch[1];
+                    embedUrl = `https://open.spotify.com/embed/episode/${episodeId}?utm_source=generator&theme=0`;
+                }
+            }
+            spotifyEmbed.setAttribute('src', embedUrl);
         }
 
         // Actualizar notas
@@ -286,6 +345,22 @@ class DataLoader {
                 `;
             }
         }
+
+        // Ocultar loader y mostrar contenido cuando todo esté cargado
+        this.hideLoader();
+    }
+
+    // Ocultar loader y mostrar contenido
+    hideLoader() {
+        const loader = document.getElementById('page-loader');
+        const content = document.getElementById('page-content');
+        
+        if (loader) {
+            loader.style.display = 'none';
+        }
+        if (content) {
+            content.style.display = 'flex';
+        }
     }
 }
 
@@ -297,9 +372,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const isPodcastPage = window.location.pathname.includes('podcast.html');
     
     if (isPodcastPage) {
-        // Obtener el ID del episodio desde la URL (query param ?episode=4) o usar 4 por defecto
+        // Obtener el ID del episodio desde la URL (query param ?capitulo=4) o usar 4 por defecto
         const urlParams = new URLSearchParams(window.location.search);
-        const episodeId = parseInt(urlParams.get('episode')) || 4;
+        const episodeId = parseInt(urlParams.get('capitulo')) || 4;
         loader.loadEpisode(episodeId);
     } else {
         loader.loadAll();

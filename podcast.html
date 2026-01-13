@@ -6,6 +6,47 @@
     <title>Episodio - Disertaciones Tecnológicas</title>
     <meta name="description" content="De la popó de caballo a algoritmos de simulación urbana - Analizamos la evolución urbana y cómo los algoritmos de simulación ayudan a planificar mejores ciudades con Vicente Torres.">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Andy Aragon">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://www.disertacionestecnologicas.com/podcast.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.disertacionestecnologicas.com/podcast.html">
+    <meta property="og:title" content="Episodio - Disertaciones Tecnológicas">
+    <meta property="og:description" content="De la popó de caballo a algoritmos de simulación urbana - Analizamos la evolución urbana y cómo los algoritmos de simulación ayudan a planificar mejores ciudades con Vicente Torres.">
+    <meta property="og:image" content="https://www.disertacionestecnologicas.com/images/podcast-spot-01.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Disertaciones Tecnológicas">
+    <meta property="article:author" content="Andy Aragon">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.disertacionestecnologicas.com/podcast.html">
+    <meta name="twitter:title" content="Episodio - Disertaciones Tecnológicas">
+    <meta name="twitter:description" content="De la popó de caballo a algoritmos de simulación urbana - Analizamos la evolución urbana y cómo los algoritmos de simulación ayudan a planificar mejores ciudades con Vicente Torres.">
+    <meta name="twitter:image" content="https://www.disertacionestecnologicas.com/images/podcast-spot-01.jpg">
+    
+    <!-- Structured Data - PodcastEpisode (se actualiza dinámicamente) -->
+    <script type="application/ld+json" id="podcast-episode-schema">
+    {
+      "@context": "https://schema.org",
+      "@type": "PodcastEpisode",
+      "name": "Episodio - Disertaciones Tecnológicas",
+      "description": "De la popó de caballo a algoritmos de simulación urbana - Analizamos la evolución urbana y cómo los algoritmos de simulación ayudan a planificar mejores ciudades con Vicente Torres.",
+      "url": "https://www.disertacionestecnologicas.com/podcast.html",
+      "image": "https://www.disertacionestecnologicas.com/images/podcast-spot-01.jpg",
+      "partOfSeries": {
+        "@type": "PodcastSeries",
+        "name": "Disertaciones Tecnológicas",
+        "url": "https://www.disertacionestecnologicas.com/"
+      },
+      "inLanguage": "es-ES"
+    }
+    </script>
+    
     <link href="./css/vendors/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/vendors/swiper-bundle.min.css" />
     <link href="./style.css" rel="stylesheet">
@@ -13,8 +54,16 @@
 
 <body class="font-inter antialiased bg-slate-900 text-slate-100 tracking-tight">
 
+    <!-- Loader -->
+    <div id="page-loader" class="fixed inset-0 bg-slate-900 z-50 flex items-center justify-center">
+        <div class="text-center">
+            <div class="inline-block animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mb-4"></div>
+            <p class="text-slate-400 text-sm">Cargando episodio...</p>
+        </div>
+    </div>
+
     <!-- Page wrapper -->
-    <div class="flex flex-col min-h-screen overflow-hidden">
+    <div id="page-content" class="flex flex-col min-h-screen overflow-hidden" style="display: none;">
 
         <!-- Site header -->
         <header class="absolute w-full z-30">
@@ -24,8 +73,8 @@
                     <!-- Site branding -->
                     <div class="shrink-0 mr-4">
                         <!-- Logo -->
-                        <a class="block group" href="index.html" aria-label="Cruip">
-                            <img src="./images/logo.svg" width="36" height="28" alt="Logo" />
+                        <a class="block group" href="index.html" aria-label="Disertaciones Tecnológicas">
+                            <img src="./images/logo.svg" width="36" height="28" alt="Logo de Disertaciones Tecnológicas" />
                         </a>
                     </div>
 
@@ -58,7 +107,7 @@
             
                             <!-- Background -->
                             <div class="absolute inset-0 bg-linear-to-br from-slate-900 to-slate-800 rounded-3xl -mx-20 -z-10 overflow-hidden" aria-hidden="true">
-                                <img class="hero-image w-full h-full object-cover rounded-3xl" src="./images/podcast-spot-04.jpg" width="1270" height="408" alt="De la popó de caballo a algoritmos de simulación urbana">
+                                <img class="hero-image w-full h-full object-cover rounded-3xl" src="" width="1270" height="408" alt="">
                             </div>
                 
                             <!-- Content -->
@@ -67,103 +116,10 @@
                                     <!-- Left content -->
                                     <div class="max-w-3xl">
                                         <!-- Copy -->
-                                        <h1 class="hero-title h2 font-hkgrotesk text-slate-100 mb-4">De la popó de caballo a algoritmos de simulación urbana</h1>
-                                        <div class="hero-metadata font-hkgrotesk text-white font-medium opacity-80 mb-8">Urbanismo y Datos · 31 oct · Episodio 7</div>
+                                        <h1 class="hero-title h2 font-hkgrotesk text-slate-100 mb-4"></h1>
+                                        <div class="hero-metadata font-hkgrotesk text-white font-medium opacity-80 mb-8"></div>
 
-                                        <!-- Player -->
-                                        <div class="relative px-4 py-5" x-data="audioplayer" @go-to.window="goToTime($event.detail)" aria-label="Audio Player" role="region">
-
-                                            <!-- Background -->
-                                            <div class="absolute inset-0 rounded-3xl opacity-25 bg-linear-to-tr from-white to-white/50 pointer-events-none -z-10" aria-hidden="true"></div>
-
-                                            <!-- Controls -->
-                                            <div class="sm:flex items-center sm:space-x-3">
-
-                                                <div class="flex items-center space-x-3 mb-3 sm:mb-0">
-
-                                                    <!-- Play / Pause button -->
-                                                    <button class="block rounded-full" aria-controls="audiofile" :aria-label="playing ? 'Pause' : 'Play'" @click="togglePlaying">
-                                                        <!-- Play icon -->
-                                                        <svg :class="{ 'hidden': playing }" xmlns="http://www.w3.org/2000/svg" width="40" height="40" aria-hidden="true">
-                                                            <defs>
-                                                                <linearGradient id="play-a" x1="87.87%" x2="12.333%" y1="20.647%" y2="76.5%">
-                                                                    <stop offset="0%" stop-color="#FFF" stop-opacity=".64" />
-                                                                    <stop offset="100%" stop-color="#FFF" />
-                                                                </linearGradient>
-                                                            </defs>
-                                                            <path fill="url(#play-a)" fill-rule="evenodd" d="M20 40C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20Zm-2.217-25.912A.5.5 0 0 0 17 14.5v11a.5.5 0 0 0 .783.412l8-5.5a.5.5 0 0 0 0-.824l-8-5.5Z" />
-                                                        </svg>
-                                                        <!-- Pause icon -->
-                                                        <svg :class="{ 'hidden': !playing }" xmlns="http://www.w3.org/2000/svg" width="40" height="40" aria-hidden="true" x-cloak>
-                                                            <defs>
-                                                                <linearGradient id="pause-a" x1="87.87%" x2="12.333%" y1="20.647%" y2="76.5%">
-                                                                    <stop offset="0%" stop-color="#FFF" stop-opacity=".64" />
-                                                                    <stop offset="100%" stop-color="#FFF" />
-                                                                </linearGradient>
-                                                            </defs>
-                                                            <path fill="url(#pause-a)" fill-rule="evenodd" d="M20 40C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20Zm-2.8-26h-2.4c-.48 0-.8.343-.8.857v10.286c0 .514.32.857.8.857h2.4c.48 0 .8-.343.8-.857V14.857c0-.514-.32-.857-.8-.857Zm8 0h-2.4c-.48 0-.8.343-.8.857v10.286c0 .514.32.857.8.857h2.4c.48 0 .8-.343.8-.857V14.857c0-.514-.32-.857-.8-.857Z" />
-                                                        </svg>
-                                                    </button>
-        
-                                                    <!-- Rewind / Forward 10 secs buttons -->
-                                                    <div class="flex space-x-2">
-                                                        <button aria-label="Rewind 10 seconds" @click="rewind">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true">
-                                                                <path class="fill-white" fill-rule="nonzero" d="m5.21 5.492 2.033-.566.536 1.927L1.258 8.67l.213-1.694-.04-.026.053-.08L2.097 2l1.984.25-.222 1.761a8.945 8.945 0 0 1 14.49 8.146l-.133.99-1.982-.266.133-.991A6.943 6.943 0 0 0 5.211 5.492Zm10.008 9.392.564-.826 1.652 1.127-.564.826c-.342.5-.734.965-1.17 1.387l-.718.695-1.39-1.438.719-.695c.338-.327.642-.688.907-1.076ZM4.91 11.929v5.09H3.681v-3.942h-.03l-1.138.696V12.71l1.255-.78H4.91Zm3.161 5.215c-1.332 0-2.155-.987-2.15-2.662.003-1.673.818-2.623 2.15-2.623 1.333 0 2.155.952 2.153 2.623-.003 1.68-.82 2.665-2.153 2.662Zm0-1.007c.532 0 .89-.532.888-1.655-.003-1.101-.358-1.623-.888-1.623-.527 0-.882.522-.885 1.623-.005 1.123.356 1.655.885 1.655Z" />
-                                                            </svg>
-                                                        </button>
-            
-                                                        <button aria-label="Fast-forward 10 seconds" @click="forward">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true">
-                                                                <path class="fill-white" fill-rule="nonzero" d="M10.47 11.929v5.09H9.24v-3.942h-.03l-1.138.696V12.71l1.255-.78h1.141Zm3.16 5.215c-1.332 0-2.155-.987-2.15-2.662.003-1.673.818-2.623 2.15-2.623 1.333 0 2.156.952 2.153 2.623-.002 1.68-.82 2.665-2.153 2.662Zm0-1.007c.532 0 .89-.532.888-1.655-.003-1.101-.358-1.623-.888-1.623-.527 0-.882.522-.884 1.623-.005 1.123.355 1.655.884 1.655Zm.59-10.645A6.944 6.944 0 0 0 3.062 11.89l.133.991-1.982.267-.134-.991A8.943 8.943 0 0 1 15.57 4.01L15.35 2.25 17.333 2l.613 4.87.052.08-.039.026.213 1.694-6.522-1.817.537-1.927 2.032.566ZM4.211 14.884c.265.388.569.749.907 1.076l.72.695-1.39 1.438-.72-.695a8.932 8.932 0 0 1-1.17-1.387l-.563-.826 1.652-1.127.564.826Z" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-    
-                                                    <!-- Playback speed -->
-                                                    <button aria-label="Playback speed" @click="toggleSpeed">
-                                                        <div class="flex items-center justify-center h-5 w-6 bg-white/30 rounded-sm text-center text-[10px] text-white font-bold" x-text="speedOutput[speedIndex]">1x</div>
-                                                    </button>
-
-                                                </div>
-
-                                                <div class="grow flex items-center space-x-3">
-    
-                                                    <!-- Seek bar -->
-                                                    <div
-                                                        class="grow bg-white/50 overflow-hidden"
-                                                        x-ref="slider"
-                                                        tabIndex="0"
-                                                        role="slider"
-                                                        aria-valuetext="Seek audio bar"
-                                                        aria-valuemin="0"
-                                                        :aria-valuemax="duration"
-                                                        :aria-valuenow="Math.floor(currentTime)"
-                                                        @mousedown="downEvent"
-                                                        @mouseup.window="upEvent"
-                                                        @mousemove.window="moveEvent"
-                                                        @touchstart="downEvent"
-                                                        @touchend.window="upEvent"
-                                                        @touchmove.window="moveEvent"                                                        
-                                                        @keydown="keyControl"
-                                                    >
-                                                        <div class="h-2 bg-linear-to-bl from-white pointer-events-none" :style="`width: ${progress}%`"></div>
-                                                    </div>
-    
-                                                    <!-- Time -->
-                                                    <div class="flex items-center text-xs font-medium text-white space-x-1.5 tabular-nums">
-                                                        <span x-text="outputCurrentTime">0:00</span>
-                                                        <span class="w-px h-4 bg-white/30" aria-hidden="true"></span>
-                                                        <span x-text="outputDuration">0:00</span>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <audio id="audiofile" src="./audio/audio.mp3" x-ref="audio" @loadedmetadata="loadedMetadata" @timeupdate="timeUpdate" @ended="ended"></audio>
-
-                                        </div>
+                                        <iframe class="spotify-embed" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3pDUkDY82UTt5hZYMxDKtS?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
                                         <script>
                                             // Audio player functionality
@@ -294,55 +250,20 @@
                                 <!-- Notes -->
                                 <div>
                                     <h2 class="text-3xl md:text-4xl font-hkgrotesk font-extrabold mb-4">Notas</h2>
-                                    <div class="episode-notes">
-                                        <p class="text-slate-400 mb-4">
-                                            ¿Cómo la tecnología nos salva de nuestras propias predicciones catastróficas? Una charla sobre movilidad, datos y el futuro de las ciudades.
-                                        </p>
-                                        <p class="text-slate-400 mb-4">
-                                            En 1894, el Times de Londres predijo que en 50 años cada calle de la ciudad estaría enterrada bajo tres metros de estiércol de caballo. Parecía un problema sin solución, hasta que la tecnología (el automóvil) cambió las reglas del juego. Hoy, nuestras ciudades enfrentan nuevos "estiércoles": el tráfico imposible y la ineficiencia logística.
-                                        </p>
-                                        <p class="text-slate-400 mb-4">
-                                            En este episodio de Disertaciones Tecnológicas, me siento con Vicente Torres, experto en movilidad y asuntos públicos (ex-Urbvan), para analizar cómo hemos pasado de limpiar calles a limpiar datos. Discutimos cómo los algoritmos de simulación no solo están optimizando rutas, sino que están rediseñando la infraestructura misma de nuestras urbes.
-                                        </p>
-                                        <p class="text-slate-400">
-                                            Exploramos la tensión entre la regulación gubernamental rígida y la innovación tecnológica fluida, y por qué entender la física de los sistemas complejos es más útil para un urbanista moderno que saber poner asfalto. Una conversación obligada para entender por qué tu viaje al trabajo es como es y cómo podría ser en el futuro.
-                                        </p>
-                                    </div>
+                                    <div class="episode-notes"></div>
                                 </div>
                                 <!-- Topics -->
                                 <div x-data>
                                     <h3 class="h3 font-hkgrotesk mb-4">Temas</h3>
-                                    <div class="episode-topics">
-                                        <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '0:25')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">0:25</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">La crisis del estiércol de 1894: Por qué los problemas lineales de las ciudades a menudo tienen soluciones exponenciales e inesperadas</span>
-                                        </button>
-                                        <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '0:53')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">0:53</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Simulación vs. Infraestructura: Cómo los "gemelos digitales" de las ciudades permiten cometer errores en la computadora para no cometerlos en el cemento</span>
-                                        </button>
-                                        <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '1:22')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">1:22</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">El dilema de la regulación: ¿Por qué las leyes de tránsito siempre van 10 años detrás de la tecnología de movilidad?</span>
-                                        </button>
-                                        <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '1:48')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">1:48</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Algoritmos en la vida real: El caso de las rutas dinámicas y cómo el transporte a demanda (tipo Urbvan) desafía el modelo tradicional de transporte público</span>
-                                        </button>
-                                        <button class="w-full text-left py-1.5 group" @click="$dispatch('go-to', '2:01')">
-                                            <span class="text-slate-400 font-medium">›</span> <span class="text-slate-100 font-medium">2:01</span> <span class="text-slate-400 group-hover:text-blue-500 transition duration-150 ease-in-out">Datos para humanos: Cómo traducir terabytes de información de tráfico en una mejor calidad de vida para el ciudadano de a pie</span>
-                                        </button>
-                                    </div>
+                                    <div class="episode-topics"></div>
                                 </div>
                                 <!-- Contributors -->
                                 <div>
                                     <h3 class="h3 font-hkgrotesk mb-4">Colaboradores</h3>
-                                    <div class="episode-contributors text-slate-400 space-y-3">
-                                        <p>
-                                            <span class="text-slate-400">—</span> <a class="font-medium text-slate-100 underline hover:no-underline" href="#0">Vicente Torres</a> es una voz autorizada en la intersección entre tecnología, movilidad y política pública. Con experiencia liderando estrategias de asuntos públicos para plataformas de movilidad como Urbvan, Vicente se especializa en utilizar datos y simulación para resolver problemas urbanos complejos. Su enfoque combina la rigurosidad técnica con una visión humanista de cómo deben funcionar las ciudades del futuro.
-                                        </p>
-                                    </div>
+                                    <div class="episode-contributors text-slate-400 space-y-3"></div>
                                 </div>
                                 <!-- Notes -->
-                                <div class="episode-transcript text-slate-400 italic">
-                                    Vicente: "El problema nunca es la tecnología en sí, Andy. El problema es que diseñamos ciudades para herramientas del pasado. Cuando tienes un algoritmo que puede predecir el flujo de personas mejor que un semáforo programado hace veinte años, la pregunta no es si debemos usarlo, sino por qué la regulación nos impide implementarlo mañana mismo..."
-                                </div>
+                                <div class="episode-transcript text-slate-400 italic"></div>
                             </div>
                             
                             <!-- Sidebar -->
@@ -353,16 +274,8 @@
                                             <path fill="#FCD34D" d="M.71 13.283A22.888 22.888 0 0 0 12.205.206c.125-.345 2.162 11.236 9.026 13.47 0 0-8.305 3.98-10.272 11.862.008.11-.47-6.26-10.249-12.255ZM48 36.768a24 24 0 0 0 12.06-13.76c.13-.36 2.26 11.8 9.5 14.14 0 0-8.71 4.18-10.78 12.45-.03.11-.53-6.57-10.78-12.83Z" />
                                         </svg>
                                     </div>
-                                    <h4 class="font-hkgrotesk font-extrabold text-slate-100 mb-4">Anfitriones e Invitados</h4>
-                                    <ul class="episode-guest space-y-3">
-                                        <li class="flex items-center">
-                                            <img class="shrink-0 rounded-full mr-3" src="./images/host-04.jpg" width="44" height="44" alt="Vicente Torres">
-                                            <div>
-                                                <div class="font-hkgrotesk font-extrabold text-sm text-slate-100">Vicente Torres</div>
-                                                <div class="font-hkgrotesk font-medium text-slate-400 text-xs">Experto en Movilidad y Asuntos Públicos</div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <h4 class="font-hkgrotesk font-extrabold text-slate-100 mb-4">Invitados</h4>
+                                    <ul class="episode-guest space-y-3"></ul>
                                 </div>
                             </aside>
 
@@ -526,7 +439,7 @@
                                 <!-- Right content -->
                                 <div class="mt-6 md:ml-5 md:mt-0" data-aos="fade-left" data-aos-duration="900">
                                     <a class="btn text-white bg-blue-500 hover:bg-blue-600 group shadow-xs" href="subscribe.html">
-                                        Suscribirse - Gratis <span class="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                                        Suscríbete <span class="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                                     </a>
                                 </div>
                             </div>
@@ -547,35 +460,15 @@
                         <div class="mb-4 md:mb-0">
                             <div class="shrink-0 flex flex-col md:flex-row items-center">
                                 <!-- Logo -->
-                                <a class="inline-flex mb-2 md:mb-0" href="index.html" aria-label="Cruip">
-                                    <img src="./images/logo.svg" width="36" height="28" alt="Logo" />
+                                <a class="inline-flex mb-2 md:mb-0" href="index.html" aria-label="Disertaciones Tecnológicas">
+                                    <img src="./images/logo.svg" width="36" height="28" alt="Logo de Disertaciones Tecnológicas" />
                                 </a>
                                 <div class="text-sm text-slate-500 ml-4">Copyright © Disertaciones Tecnológicas<span class="md:hidden lg:inline">. Todos los derechos reservados.</span></div>
                             </div>
                         </div>
                         <!-- Social links -->
-                        <ul class="inline-flex space-x-2">
-                            <li>
-                                <a class="flex justify-center items-center text-blue-500 hover:text-blue-600 transition duration-150 ease-in-out" href="#0" aria-label="Twitter">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex justify-center items-center text-blue-500 hover:text-blue-600 transition duration-150 ease-in-out" href="#0" aria-label="YouTube">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M23.8 12.8c-.2-1.3-.8-2.2-2.2-2.4C19.4 10 16 10 16 10s-3.4 0-5.6.4c-1.4.2-2.1 1.1-2.2 2.4C8 14.1 8 16 8 16s0 1.9.2 3.2c.2 1.3.8 2.2 2.2 2.4 2.2.4 5.6.4 5.6.4s3.4 0 5.6-.4c1.4-.3 2-1.1 2.2-2.4.2-1.3.2-3.2.2-3.2s0-1.9-.2-3.2ZM14 19v-6l5 3-5 3Z"></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex justify-center items-center text-blue-500 hover:text-blue-600 transition duration-150 ease-in-out" href="#0" aria-label="Telegram">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22.968 10.276a.338.338 0 0 0-.232-.253 1.192 1.192 0 0 0-.63.045s-14.019 5.038-14.82 5.596c-.172.121-.23.19-.259.272-.138.4.293.573.293.573l3.613 1.177a.388.388 0 0 0 .183-.011c.822-.519 8.27-5.222 8.7-5.38.068-.02.118 0 .1.049-.172.6-6.606 6.319-6.64 6.354a.138.138 0 0 0-.05.118l-.337 3.528s-.142 1.1.956 0a30.66 30.66 0 0 1 1.9-1.738c1.242.858 2.58 1.806 3.156 2.3a1 1 0 0 0 .732.283.825.825 0 0 0 .7-.622s2.561-10.275 2.646-11.658c.008-.135.021-.217.021-.317a1.177 1.177 0 0 0-.032-.316Z" />
-                                    </svg>
-                                </a>
-                            </li>
+                        <ul class="social-links inline-flex space-x-2">
+                            <!-- Los enlaces sociales se cargan dinámicamente desde data/social.json -->
                         </ul>
                     </div>
 

@@ -10,6 +10,8 @@ services:
       - ./podcast.html:/usr/share/nginx/html/podcast.html
       - ./subscribe.html:/usr/share/nginx/html/subscribe.html
       - ./style.css:/usr/share/nginx/html/style.css
+      - ./robots.txt:/usr/share/nginx/html/robots.txt
+      - ./sitemap.xml:/usr/share/nginx/html/sitemap.xml
       - ./css:/usr/share/nginx/html/css
       - ./js:/usr/share/nginx/html/js
       - ./images:/usr/share/nginx/html/images
